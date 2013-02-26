@@ -1,0 +1,41 @@
+#tips {
+    width: 400px !important;
+    box-sizing: border-box;
+    height: auto;
+    display: block;
+    margin: 30px 30px 10px 10px;
+    float: right;
+    padding: 25px 10px 18px 25px;
+}
+#tips > header {
+    display: block;
+    width: auto;
+    margin: -40px 0px 20px -70px;
+    border-radius: 0;
+    padding: 20px;
+    font-family: "Reenie Beanie";
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: bold;
+}
+#tips > p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+#tipImg {
+    float: left;
+    margin: 70px -60px 0px 50px;
+    display: block;
+    overflow: hidden;
+}
+#tipImg {
+    float: left;
+    margin: 70px -70px 0px 20px;
+    display: block;
+    overflow: hidden;
+    width: 400px;
+    z-index: 100;
+    position: relative;
+    -webkit-transform: rotate(-10deg);
+}

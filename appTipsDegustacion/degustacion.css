@@ -1,0 +1,118 @@
+#degustacion {
+    width: 700px !important;
+    box-sizing: border-box;
+    height: auto;
+    display: block;
+    margin: 10px 30px 10px 10px;
+    float: right;
+    padding: 20px 10px 18px 20px;
+    position: relative;
+    z-index: 100;
+    border-radius: 0;
+}
+#degustacion > header {
+    display: block;
+    width: auto;
+    margin: -40px 0px 20px -40px;
+    border-radius: 0;
+    padding: 20px 40px;
+    font-family: "Reenie Beanie";
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+}
+#degustacion > .degustacionImg {
+    width: 220px;
+    float: right;
+    margin: -40px -30px 0px 10px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 101;
+}
+#degustacion > .degustacionText {
+    float: left;
+    width: 470px;
+}
+#degustacion > .degustacionText > p {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 19px;
+}
+#degustacionTabstrip {
+    background: transparent !important;
+    border: none !important;
+}
+#degustacionTabstrip > ul.k-tabstrip-items {
+    text-align: center;
+    margin-bottom: -10px;
+}
+#degustacionTabstrip > ul > li {
+    border: none !important;
+    border-radius: 50px;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    text-align: center;
+    margin: 5px 5px 0 5px;
+    background: #9d733f;
+    color: #eee;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    font-family: "Reenie Beanie",arial,sans-serif;
+    font-size: 25px;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+}
+#degustacionTabstrip > ul > li > span.k-link {
+    padding: 0;
+}
+#degustacionTabstrip > ul > li:hover{
+    background: #f3d6a3;
+}
+#degustacionTabstrip > ul > li:hover > span.k-link {
+    color:#fff;
+}
+#degustacionTabstrip > ul > li.k-tab-on-top {
+    background: #ffd770 !important;
+    color: #553613;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+#degustacionTabstrip > div.k-content {
+    border: none;
+    background: #ffe19a;
+    padding: 20px;
+}
+#degustacionTabstrip > div.k-content.k-state-active {
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.5);
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+#degustacionTabstrip > div.k-content > img {
+    float: right;
+    width: 200px;
+    margin: -40px -50px 10px 10px;
+}
+#degustacionTabstrip > div.k-content.k-state-active > .tabText{
+    float: left;
+    width: 460px;
+}
+#degustacionTabstrip > div.k-content.k-state-active > .tabText > p {
+    margin-bottom: 20px;
+}
+
+ul.dotList {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 10px;
+}

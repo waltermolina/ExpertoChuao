@@ -1,0 +1,35 @@
+/*@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);*/
+/*Console like font for cupon id*/
+
+@media print{
+    *{display: none;}
+    #cupon{
+        margin: 0px;
+    }
+    
+    #cupon > header {
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+    }
+    #cupon > header > h1{
+        font-size: 2em;
+        line-height: 0.8em;
+    }
+    #cupon > header > h2{
+        font-size: 1.5em;
+        line-height: 0.7em;
+        margin-bottom: 5px;
+    }
+    #cupon > header > h3{
+        font-size: 1.8em;
+        font-family: 'Inconsolata', sans-serif;
+    }
+    #cupon > header > p.fechaCupon{
+        font-size: 1em;
+        font-family: 'Inconsolata', sans-serif;
+    }
+    #saboresCupon {
+        
+    }
+
+}

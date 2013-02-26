@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+/*Console like font for cupon id*/
+
+.instrucciones {
+    position: relative;
+    padding: 0px;
+}
+
+#step1, #step2, #step3 {
+    border-radius: 0px;
+    margin: 10px 10px 0px 10px;
+    background: #fff;
+    border: 1px solid #bbb;
+    padding: 10px 15px 10px 10px;
+}
+#step1 > header, #step2 > header, #step3 > header{
+    border-bottom: 0px solid #333;
+    margin: 0px 0px 10px 0px;
+}
+#step1 > header > h1, #step2 > header > h1, #step3 > header > h1 {
+    font-size: 1.6em;
+}
+#step2, #step3{
+    display: none;
+}
+
+.btns-container {
+    float: right;
+}
+
+.inputCuponContainer{
+    float: left;
+    background: #eee;
+    padding: 2px;
+    border: 2px solid #000;
+}
+
+#cuponId {
+    width: 250px;
+    position: relative;
+    float: inline-block;
+    padding: 7px 8px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    font-size: 18px;
+    color: #000;
+    min-width: 42px;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+#listaPremios {
+    margin: 10px 0px 0px 10px;
+}
+.premio {
+    background: #222;
+    float: left;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    margin: 5px 5px 0px 0px;
+    color: #eee;
+    cursor: default;
+}
+.invalidTicket{
+    background: #c00;
+    float: left;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    margin: 5px 5px 0px 0px;
+    color: #eee;
+    cursor: default;
+}

@@ -1,0 +1,218 @@
+html {
+    height: 100%;
+    font-family:Verdana;
+    font-size:16px; /*8px*/
+    font-weight:normal;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    min-height: 500px;
+    background: #222;
+    position: relative;
+    font-size: 62.5%;
+}
+
+#sombra {
+    -webkit-box-shadow: inset 0px 0px 200px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0px 0px 200px 50px rgba(0, 0, 0, 0.7);
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/**BACKGROUND**/
+#background{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/****/
+#frontGroup {
+    width: 800px;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    margin: -100px auto 0 auto;
+}
+#welcome {
+    float: right;
+    width: 440px;
+    margin-right: 1em;
+    padding: 10px 10px 0px 0px;
+    color: #fff;
+}
+#welcome > .l1 {
+    position: relative;
+    z-index: 101;
+    float: left;
+    font-size: 2.3em;
+    height: 1em;
+    margin-left: 0.1em;
+    text-shadow: 0px 0px 5px black;
+}
+#welcome > .l2 {
+    position: relative;
+    z-index: 100;
+    float: left;
+    font-size: 4.5em;
+    line-height: 0.8em;
+    height: 1.2em;
+    margin: 0em 0 0.6em;
+    text-shadow: 0px 0px 15px black;
+}
+
+/**BOTTOM LINKS**/
+#bottomBar{
+    position: fixed;
+    bottom: 1em;
+    width: 100%;
+}
+#bottomBar > .cont {
+    margin: 0 10px;
+}
+#links{ float: left; display: none;}
+#links a, #copyright{
+    float: left;
+    margin: 0 1em 0 0;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: #111;
+    text-shadow: 0px 0px 5px #888;
+}
+#links a:hover{
+    text-shadow: 0px 0px 20px #555;
+    font-weight: bold;
+}
+#copyright{
+    float: right;
+    margin: 0;
+    color: #222;
+    text-shadow: 0px 0px 5px #888;
+}
+
+/**KENDO VALIDATION**/
+.k-tooltip-validation {
+    /*float: right;*/
+    margin: 0px 0.5em 0.5em 0px;
+}
+/**LOGIN MSJ**/
+.invalid,
+.valid{
+    font-size: 1.2em;
+    margin: 1em auto 0;
+    text-align: center;
+    background: #0f0;
+    padding: 1em 2%;
+    font-weight: bold;
+    color: #eee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+.valid {
+    background: #0f0;
+    background-image: linear-gradient(top, #006600 0%, #00CC00 100%);
+    background-image: -o-linear-gradient(top, #006600 0%, #00CC00 100%);
+    background-image: -moz-linear-gradient(top, #006600 0%, #00CC00 100%);
+    background-image: -webkit-linear-gradient(top, #006600 0%, #00CC00 100%);
+    background-image: -ms-linear-gradient(top, #006600 0%, #00CC00 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #006600),
+        color-stop(1, #00CC00)
+        );
+}
+.invalid{
+    background: #f00;
+    background-image: linear-gradient(top, #660000 0%, #cc0000 100%);
+    background-image: -o-linear-gradient(top, #660000 0%, #cc0000 100%);
+    background-image: -moz-linear-gradient(top, #660000 0%, #cc0000 100%);
+    background-image: -webkit-linear-gradient(top, #660000 0%, #cc0000 100%);
+    background-image: -ms-linear-gradient(top, #660000 0%, #cc0000 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #660000),
+        color-stop(1, #cc0000)
+        );
+}
+.msj{
+    font: 1em Maven Pro, Arial,Sans-serif;
+    color: #222;
+    margin: 0.5em auto;
+    padding: 0px 0px 0px 1em;
+}
+
+/**LOGIN BOX**/
+#login{
+    float: left;
+    margin-top: 0em;
+}
+#loginBox {
+    padding: 0.5em;
+    margin: 0 0 0 0;
+    background: #222;
+    background: rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+}
+/*
+#body header{
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+#body header h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: #222;
+}
+*/
+/**INPUT**/
+/**/
+#loginBox input[type="text"],
+#loginBox input[type="password"] {
+    float: left;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin: 0 0 0.5em 0;
+    border: 0 none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #444;
+    width: 24em;
+    padding: 0px 1em;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+} 
+#loginBox input[type="text"]{ background:rgba(255, 255, 255, 0.5); }
+#loginBox input[type="password"]{ background: rgba(255, 255, 255, 0.5); }
+
+#loginBox input[type="text"]:focus,
+#loginBox input[type="password"]:focus {
+    color: #111;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+#loginBox input[type="text"]:focus { background:  #eee; }
+#loginBox input[type="password"]:focus { background:  #eee; }

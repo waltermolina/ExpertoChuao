@@ -1,0 +1,33 @@
+#login {
+    float: left;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    width: 500px;
+    display: block;
+    margin: 70px 0px 30px 155px;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#login > header {
+    width: auto;
+    margin: -90px 0 30px -55px;
+    font-size: 35px;
+    padding: 20px;
+    font-family: "Reenie Beanie",arial,sans-serif;
+    text-align: center;
+}
+#loginBox >label {
+    box-sizing: border-box;
+    height: 34px;
+    display: block;
+    float: left;
+    line-height: 34px;
+    padding: 0 0px;
+    margin: 0px 5px 10px 0px;
+    width: 180px;
+    text-align: right;
+    font-family: "Reenie Beanie",arial,sans-serif;
+    font-size: 30px;
+}

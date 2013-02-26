@@ -1,0 +1,224 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('../fonts/websymbols/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/websymbols/websymbols-regular-webfont.woff') format('woff'),
+        url('../fonts/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+        url('../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    font-size:16px
+}
+
+.bold {
+    font-weight: bold;
+}
+
+body{
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 62.5%;
+}
+#background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#topbar {
+    height: 34px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: #555;
+    -webkit-box-shadow:  0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:  0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:  0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+#main {
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top: 34px;
+    bottom: 0;
+    overflow: hidden;
+    font-size: 1.2em;
+}
+
+/*LEFT SIDE*/
+#left {
+    float: left;
+    width: 230px;
+    height: 100%;
+    background: #7B3F00;
+    color: #eee;
+}
+#left > header {
+    margin: 10px 5px;
+}
+#left > header > h1 {
+    font-size: 2em;
+    margin: 0px 0px 10px 5px;
+    line-height: 30px;
+    float: left;
+    max-width: 185px;
+}
+#left > header > p {
+    margin: 0px 10px 0px 10px;
+}
+
+.backButton {
+    float: left;
+    margin: 0px !important;
+}
+
+
+/*RIGHT SIDE*/
+#right {
+    position: absolute;
+    left: 230px;
+    right: 0%;
+    height: 100%;
+    background: transparent; /*#F3E5AB*/
+}
+
+
+/**/
+.noMargin{
+    margin-top: 0px !important;
+}
+
+/*  Blue */
+.m-btn.black   
+{
+    color: white;  
+    text-shadow: none;	
+    background-color: #000;
+    background-image: -moz-linear-gradient(top, #010101, #000);
+    background-image: -ms-linear-gradient(top, #4d90fe, #4787ed);
+    background-image: -webkit-linear-gradient(top, #010101, #000);
+    background-image: -o-linear-gradient(top, #010101, #000);
+    background-image: linear-gradient(top, #010101, #000);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#010101', endColorstr='#000', GradientType=0);
+}
+.m-btn.black:hover, 
+.m-btn.black:focus, 
+.m-btn.black:active,
+.m-btn.black.active,
+.m-btn.black[disabled],
+.m-btn.black.disabled {
+    color: #fff;
+    background-color: #111;
+    background-image: -moz-linear-gradient(top, #333, #333);
+    background-image: -ms-linear-gradient(top, #333, #333);
+    background-image: -webkit-linear-gradient(top, #333, #333);
+    background-image: -o-linear-gradient(top, #333, #333);
+    background-image: linear-gradient(top, #333, #333);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#333', GradientType=0);
+}
+
+.m-btn.black:active,
+.m-btn.black.active
+{
+    background-color: #333;
+    background-image: -moz-linear-gradient(top, #555, #333);
+    background-image: -ms-linear-gradient(top, #555, #333);
+    background-image: -webkit-linear-gradient(top, #555, #333);
+    background-image: -o-linear-gradient(top, #555, #333);
+    background-image: linear-gradient(top, #555, #333);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555', endColorstr='#333', GradientType=0);
+
+}
+
+
+
+/*aling dropdown menu to right (user menu)*/
+.m-dropdown-menu.align-right{
+    right: 0;
+    left: auto;
+}
+/*custom shadow for dropdown menu*/
+.m-dropdown-menu {
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.3) !important;
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.3) !important;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3) !important;
+}
+/*fix margin in flavours buttons*/
+.alternative-separator {
+    margin-left: 0px !important;
+    margin-right: 15px !important;
+}
+/*set custom border for flavour buttons*/
+.flavour-border {
+    border-left-style: solid !important;
+    border-left-width: 10px !important;
+}
+
+.iddl {
+    margin: 0px;
+    padding: 5px;
+    overflow: hidden;
+}
+.iddl > img {
+    height: 100px;
+    border: 2px solid #eee;
+    display: block;
+    background: #eee;
+    -webkit-box-shadow: 3px 2px 10px -3px rgba(0, 0, 0, 0.7);
+    box-shadow: 3px 2px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.iddl > .name {
+    height: 20px;
+    line-height: 20px;
+}
+
+/**/
+#fullScreenAlert{
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 50%;
+}
+#fullScreenAlert > .cont {
+    width: 800px;
+    margin: 0 auto;
+    color: #eee;
+}
+#fullScreenAlert .icon {
+    font-size: 5em;
+    overflow: hidden;
+    margin: 10px 10px 20px 0px;
+    float: left;
+    font-family: 'WebSymbolsRegular';
+}
+#fullScreenAlert .icon > img {
+    height: 100%;
+}
+#fullScreenAlert .txt {
+    float: left;
+    margin: 25px 0px 0px 0px;
+    max-height: 160px;
+    overflow: hidden;
+    width: 690px;
+}
+#fullScreenAlert .txt > h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+#fullScreenAlert .txt > p > a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#fullScreenAlert .txt > p > a:hover {
+    text-decoration: underline;
+}

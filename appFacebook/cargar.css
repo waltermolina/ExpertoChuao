@@ -1,0 +1,82 @@
+#cargar {
+    float: left;
+    width: 500px;
+    min-height: 250px;
+    margin: 40px -60px 20px 20px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 60px;
+    z-index: 89;
+    font-family: "Reenie Beanie",arial,sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+#cargar > h1{
+    font-size: 1.6em;
+    line-height: 1em;
+}
+#cupon {
+    position: relative;
+    z-index: 90;
+    float: right;
+    margin: 20px 20px 10px 0px;
+    width: 280px;
+    height: 250px;
+    padding: 10px;
+    font-size: 62.5%;
+    background: #fff;
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+}
+#cupon::before,
+#cupon::after{
+    position: absolute;
+    content: "";
+    border-top: 4px dotted #fff;
+    left: 0;
+    width: 300px;
+}
+#cupon::before{
+    top: -3px;
+}
+#cupon::after {
+    bottom: -3px;
+}
+#cupon > header {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    height: 84px;
+}
+#cupon > header > h1{
+    font-size: 2em;
+    line-height: 0.8em;
+}
+#cupon > header > h2{
+    font-size: 1.5em;
+    line-height: 0.7em;
+    margin-bottom: 5px;
+}
+#cupon > header > h3{
+    font-size: 1.8em;
+    font-family: 'Inconsolata', sans-serif;
+}
+#cupon > header > h3 > #inputIdCupon {
+    text-shadow: 0px 0px 10px #999;
+    filter: dropshadow(color=#999999, offx=0, offy=0);
+    border: none;
+    background: #eee;
+    color: #222;
+    font-family: 'Inconsolata', sans-serif;
+    width: 230px;
+}
+#cupon > header > p.fechaCupon{
+    font-size: 1em;
+    font-family: 'Inconsolata', sans-serif;
+}
+#result {
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: left;
+    padding: 10px;
+}

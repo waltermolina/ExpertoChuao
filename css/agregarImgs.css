@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+        url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+        url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*imgs*/
+#dropbox {
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    margin: 0px 0px 0px 0;
+    min-height: 290px;
+    max-height: 400px;
+    overflow: auto;
+    width: 720px;
+    border: 3px dashed #CCC;
+    padding: 10px;
+}
+
+#dropbox .message {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 110px;
+    margin-top: -55px;
+}
+#dropbox .message > h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#dropbox .message > h2 {
+    font-size: 12px;
+}
+
+#dropbox .preview{
+    max-width: 210px;
+    max-height: 210px;
+    display: inline-block;
+    margin: 0px 10px 10px 0px;
+    position: relative;
+    text-align: center;
+}
+#dropbox .preview img{
+    max-width: 240px;
+    max-height:180px;
+    border:3px solid #fff;
+    display: block;
+
+    box-shadow:0 0 2px #000;
+}
+#dropbox .imageHolder{
+    display: inline-block;
+    position:relative;
+}
+#dropbox .uploaded{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: rgba(255,255,255,0.5);
+    -webkit-box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#dropbox .uploaded > span {
+    font-family: 'WebSymbolsRegular';
+    font-size: 6em;
+    background: #222;
+    color: #eee;
+    border-radius: 50%;
+    height: 100px;
+    display: block;
+    width: 100px;
+    line-height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0px 0px -50px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+#dropbox .preview.done .uploaded{
+    display: block;
+}
+
+#dropbox .progressHolder{
+    position: absolute;
+    background-color:#252f38;
+    height:12px;
+    width:100%;
+    left:0;
+    bottom: 0;
+
+    box-shadow:0 0 2px #000;
+}
+#dropbox .progress{
+    background-color:#2586d0;
+    position: absolute;
+    height:100%;
+    left:0;
+    width:0;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset;
+    -moz-transition:0.25s;
+    -webkit-transition:0.25s;
+    -o-transition:0.25s;
+    transition:0.25s;
+}
+#dropbox .preview.done .progress{
+    width:100% !important;
+}
+
+#dropbox > input {
+    display: none;
+}
+#dropbox > label {
+    background: #00f;
+    color: #eee;
+}
+#file {
+    cursor: default;
+    float: none;
+    display: inline-block;
+}
+#hiddenInput{
+    display: none;
+    height: 10px;
+    width: 10px;
+    background: #00f;
+    overflow:hidden;
+    opacity: 0;
+}

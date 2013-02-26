@@ -1,0 +1,132 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+/*Console like font for cupon id*/
+
+#cupon{
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    right: 20px;
+    width: 280px;
+    padding: 10px;
+    background: #fff;
+/*    background-image: linear-gradient(top, #FFFFFF 0%, #EFEFEF 70%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #EFEFEF 70%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #EFEFEF 70%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #EFEFEF 70%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #EFEFEF 70%, #FFFFFF 100%);*/
+    -webkit-box-shadow:  0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:  0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#cupon::before,
+#cupon::after{
+    position: absolute;
+    content: "";
+    border-top: 4px dotted #fff;
+    left: 0;
+    width: 300px;
+}
+#cupon::before{
+    top: -3px;
+}
+#cupon::after {
+    bottom: -3px;
+}
+#cupon > header {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    height: 84px;
+}
+#cupon > header > h1{
+    font-size: 2em;
+    line-height: 0.8em;
+}
+#cupon > header > h2{
+    font-size: 1.5em;
+    line-height: 0.7em;
+    margin-bottom: 5px;
+}
+#cupon > header > h3{
+    font-size: 1.8em;
+    font-family: 'Inconsolata', sans-serif;
+}
+#cupon > header > p.fechaCupon{
+    font-size: 1em;
+    font-family: 'Inconsolata', sans-serif;
+}
+#saboresCupon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    top: 100px;
+    overflow: auto;
+}
+
+/*-----------------------------*/
+.instrucciones {
+    position: absolute;
+    right: 315px;
+    left: 0;
+    top: 30px;
+    padding: 0px;
+}
+
+#step1, #step2, #step3 {
+    border-radius: 0px;
+    margin: 10px 0px 0px 10px;
+    background: #fff;
+    border: 1px solid #bbb;
+    padding: 10px 15px 10px 10px;
+    /*-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);*/
+}
+#step1 > header, #step2 > header, #step3 > header{
+    border-bottom: 0px solid #333;
+    margin: 0px 0px 10px 0px;
+}
+#step1 > header > h1, #step2 > header > h1, #step3 > header > h1 {
+    font-size: 1.6em;
+}
+.btprint-container {
+    float: right;
+}
+#listaSabores{
+    border: none !important;
+}
+
+#cuponPrint{ display: none;}
+
+@media print{
+    #cuponPrint{
+        display: block;
+        margin: 0px;
+    }
+    
+    #cuponPrint > header {
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+    }
+    #cuponPrint > header > h1{
+        font-size: 20pt !important;
+    }
+    #cuponPrint > header > h2{
+        font-size: 16pt !important;
+        margin-bottom: 5px;
+    }
+    #cuponPrint > header > h3{
+        font-size: 18pt !important;
+        font-family: 'Inconsolata', sans-serif;
+    }
+    #cuponPrint > header > p.fechaCupon{
+        font-size: 10pt !important;
+        font-family: 'Inconsolata', sans-serif;
+    }
+    #cuponPrint > saboresCupon{
+        font-size: 14pt !important;
+    }
+
+}
