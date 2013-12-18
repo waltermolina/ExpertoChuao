@@ -7,17 +7,30 @@ if (isset($_GET['table'])) {
     switch ($_GET['table']) {
 
         case "Sabores":
-            $sql = "insert into Sabores values(0,'{$_GET['nombre']}','{$_GET['descripcion']}','{$_GET['imagen']}','{$_GET['color']}')";
+            $nombre = mysql_real_escape_string($_GET['nombre']);
+            $descripcion = mysql_real_escape_string($_GET['descripcion']);
+            $imagen = mysql_real_escape_string($_GET['imagen']);
+            $color = mysql_real_escape_string($_GET['color']);
+
+            $sql = "insert into Sabores values(0,'{$nombre}','{$descripcion}','{$imagen}','{$color}')";
             
             mysql_query($sql);
             break;
         case "Titulos":
-            $sql = "insert into Titulos values(0,'{$_GET['nombre']}','{$_GET['descripcion']}','{$_GET['imagen']}')";
+            $nombre = mysql_real_escape_string($_GET['nombre']);
+            $descripcion = mysql_real_escape_string($_GET['descripcion']);
+            $imagen = mysql_real_escape_string($_GET['imagen']);
+
+            $sql = "insert into Titulos values(0,'{$nombre}','{$descripcion}','{$imagen}')";
             
             mysql_query($sql);
             break;
         case "Premios":
-            $sql = "insert into Premios values(0,'{$_GET['nombre']}','{$_GET['descripcion']}','{$_GET['imagen']}')";
+            $nombre = mysql_real_escape_string($_GET['nombre']);
+            $descripcion = mysql_real_escape_string($_GET['descripcion']);
+            $imagen = mysql_real_escape_string($_GET['imagen']);
+
+            $sql = "insert into Premios values(0,'{$nombre}','{$descripcion}','{$imagen}')";
             
             mysql_query($sql);
             break;
